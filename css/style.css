@@ -1,3 +1,52 @@
 #wrapper {
-    
+    display: grid;
+    background-color: rgb(220, 236, 245);
+    grid-template-rows: 5fr 1fr 3fr 3fr 1fr;
+    min-height: auto;
+    grid-template-areas: 
+    'hd hd hd'
+    'nv nv nv'
+    'sc sc sc'
+    'as as as'
+    'ft ft ft'
+    ;
+}
+
+img {
+    width: 150px;
+}
+
+header {
+    grid-area: hd;
+    background-color: #212924;
+    display: flex;
+    flex-direction: column;
+    font-size: 50px;
+    justify-content: center;
+    align-items: center;
+    color:rgb(220, 236, 245);
+}
+
+nav{
+    grid-area: nv;
+    background-color: #324b3c;
+    display: flex;
+    justify-content: space-around;
+    color:rgb(220, 236, 245)
+}
+
+section {
+    grid-area: sc;
+    color: #212924;
+}
+
+aside {
+grid-area: as;
+color: #212924;
+}
+
+footer {
+    grid-area: ft;
+    background-color: #324b3c;
+    color:rgb(220, 236, 245)
 }
