@@ -2,7 +2,7 @@
     display: grid;
     background-color: rgb(220, 236, 245);
     grid-template-rows: 5fr 1fr 3fr 3fr 1fr;
-    min-height: auto;
+    min-height: auto¢;
     grid-template-areas: 
     'hd hd hd'
     'nv nv nv'
