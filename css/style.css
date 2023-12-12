@@ -16,13 +16,11 @@
 #wrapper_resmal {
     display: grid;
     background-color: rgb(220, 236, 245);
-    grid-template-rows: 2fr 1fr 3fr 3fr 3fr;
+    grid-template-rows: 1fr 0.3fr 6fr;
     grid-template-areas: 
     'h2 h2'
     'nv nv'
-    's1 s2'
-    's3 s4'
-    's5 s6'
+    's s'
     ;
 }
 
@@ -47,6 +45,10 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+#wrapper nav p a {
+    text-decoration: none;
     color:rgb(220, 236, 245)
 }
 
@@ -102,7 +104,8 @@ footer {
 
 
 header2 img {
-    width: 50px;
+    width: 100px;
+    padding: 10px;
 }
 
 header2 {
@@ -110,46 +113,42 @@ header2 {
     background-color: #212924;
     color: rgb(220, 236, 245);
     font-size: 50px;
+    position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
-/* #sectionresmal {
-    margin: 10px;
-    grid-area:s;
-} */
+#header2_resmal {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 0px;
+    width: 100%;
+}
+
+#sectionresmal {
+    grid-area: s;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 30px;
+    gap: 30px;
+} 
 
 #sectionresmal section {
-    border: solid 1px black;
+    background-color: #212924;
+    color: rgb(220, 236, 245);
+    border-radius: 40px;
+    width: 45%;
+    height: 300px;
 }
 
 #sec1 {
-    grid-area: s1;
-    border: solid 1px black;
+    background-image: url('../img/brazil.png');
+    background-size: cover;
 }
 
 #sec2 {
-    grid-area: s2;
-    border: solid 1px black;
-}
-
-sec3 {
-    grid-area: s3;
-    border: solid 1px black;
-}
-
-section4 {
-    grid-area: s4;
-    border: solid 1px black;
-}
-
-section5 {
-    grid-area: s5;
-    border: solid 1px black;
-}
-
-section6 {
-    grid-area: s6;
-    border: solid 1px black;
+    background-image: url('../img/italy.png');
+    background-size: cover;
 }
