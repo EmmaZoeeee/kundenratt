@@ -24,6 +24,19 @@
     ;
 }
 
+#wrapper_packning {
+    display: grid;
+    background-color: rgb(220, 236, 245);
+    grid-template-rows: 1fr 0.3fr 3fr;
+    grid-template-areas: 
+    'h3 h3 h3'
+    'nv nv nv'
+    's1 s1 s1'
+    's2 s2 s2'
+    's3 s3 s3'
+    's4 s4 s4'
+}
+
 header img {
     width: 200px;
 }
@@ -103,6 +116,10 @@ footer {
 
 
 
+
+
+
+
 header2 img {
     width: 100px;
     padding: 10px;
@@ -136,11 +153,16 @@ header2 {
 } 
 
 #sectionresmal section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #212924;
-    color: rgb(220, 236, 245);
+    color: #212924;
     border-radius: 40px;
     width: 45%;
     height: 300px;
+    font-size: xx-large;
+    text-shadow: 0px 0px 4px rgb(220, 236, 245);
 }
 
 #sec1 {
@@ -151,4 +173,52 @@ header2 {
 #sec2 {
     background-image: url('../img/italy.png');
     background-size: cover;
+}
+
+#wrapper_resmal nav p a {
+    text-decoration: none;
+    color:rgb(220, 236, 245)
+}
+
+section:hover p {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+header3 img {
+    width: 100px;
+    padding: 10px;
+}
+
+header3 {
+    grid-area: h3;
+    background-color: #212924;
+    color: rgb(220, 236, 245);
+    font-size: 50px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+nav{
+    grid-area: nv;
+    background-color: #324b3c;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#wrapper_packning nav p a {
+    text-decoration: none;
+    color:rgb(220, 236, 245)
 }
