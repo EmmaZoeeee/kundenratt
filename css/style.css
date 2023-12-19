@@ -31,9 +31,9 @@
     grid-template-areas: 
     'h3 h3 h3'
     'nv nv nv'
-    's1 s1 s3'
-    's2 s2 s3'
-    's4 s4 s3'
+    's1 s1 s1'
+    's2 s2 s2'
+    's3 s3 s3'
 }
 
 header img {
@@ -166,32 +166,32 @@ footer {
 }
 
 #sec1 {
-    background-image: url('../img/brazil.png');
+    background-image: url('../img/brazil.jpg');
     background-size: cover;
 }
 
 #sec2 {
-    background-image: url('../img/italy.png');
+    background-image: url('../img/italy.jpg');
     background-size: cover;
 }
 
 #sec3 {
-    background-image: url('../img/schweiz.png');
+    background-image: url('../img/schweiz.jpg');
     background-size: cover;
 }
 
 #sec4 {
-    background-image: url('../img/japan.png');
+    background-image: url('../img/japan.jpg');
     background-size: cover;
 }
 
 #sec5 {
-    background-image: url('../img/france.png');
+    background-image: url('../img/france.jpg');
     background-size: cover;
 }
 
 #sec6 {
-    background-image: url('../img/england.png');
+    background-image: url('../img/england.jpg');
     background-size: cover;
 }
 
@@ -267,16 +267,16 @@ nav{
     grid-area: s1;
 }
 
+#packning_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 #sec02 {
-    grid-area: s2;
+    grid-area:s2;
 }
 
 #sec03 {
-    grid-area: s3;
-    object-fit: cover;
-    width: 100%px;
-}
-
-#sec04 {
-    grid-area:s4;
+    grid-area:s3;
 }
