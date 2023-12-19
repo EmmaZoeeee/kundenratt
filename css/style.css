@@ -27,7 +27,7 @@
 #wrapper_packning {
     display: grid;
     background-color: rgb(220, 236, 245);
-    grid-template-rows: 1fr 0.3fr 2fr 2fr 2fr;
+    grid-template-rows: 0.6fr 0.3fr 2fr 2fr 2fr;
     grid-template-areas: 
     'h3 h3 h3'
     'nv nv nv'
@@ -265,14 +265,6 @@ nav{
 
 #sec01 {
     grid-area: s1;
-}
-
-#packning_text {
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-    display: grid;
-    justify-items: stretch;
 }
 
 #sec02 {
