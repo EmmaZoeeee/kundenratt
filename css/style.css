@@ -27,14 +27,13 @@
 #wrapper_packning {
     display: grid;
     background-color: rgb(220, 236, 245);
-    grid-template-rows: 1fr 0.3fr 3fr;
+    grid-template-rows: 1fr 0.3fr 2fr 2fr 2fr;
     grid-template-areas: 
     'h3 h3 h3'
     'nv nv nv'
-    's1 s1 s1'
-    's2 s2 s2'
-    's3 s3 s3'
-    's4 s4 s4'
+    's1 s1 s3'
+    's2 s2 s3'
+    's4 s4 s3'
 }
 
 header img {
@@ -120,12 +119,12 @@ footer {
 
 
 
-header2 img {
+#header2 img {
     width: 100px;
     padding: 10px;
 }
 
-header2 {
+#header2 {
     grid-area: h2;
     background-color: #212924;
     color: rgb(220, 236, 245);
@@ -161,8 +160,9 @@ header2 {
     border-radius: 40px;
     width: 45%;
     height: 300px;
-    font-size: xx-large;
+    font-size: xxx-large;
     text-shadow: 0px 0px 4px rgb(220, 236, 245);
+    position: relative;
 }
 
 #sec1 {
@@ -175,15 +175,47 @@ header2 {
     background-size: cover;
 }
 
-#wrapper_resmal nav p a {
-    text-decoration: none;
-    color:rgb(220, 236, 245)
+#sec3 {
+    background-image: url('../img/schweiz.png');
+    background-size: cover;
 }
 
-section:hover p {
+#sec4 {
+    background-image: url('../img/japan.png');
+    background-size: cover;
+}
+
+#sec5 {
+    background-image: url('../img/france.png');
+    background-size: cover;
+}
+
+#sec6 {
+    background-image: url('../img/england.png');
+    background-size: cover;
+}
+
+#wrapper_resmal nav p a {
+    text-decoration: none;
+    color:rgb(220, 236, 245);
+}
+
+#wrapper_resmal section:hover p {
     display: none;
 }
 
+#wrapper_resmal section div {
+    height: 100%;
+    width: 100%;
+    border-radius: 40px;
+    position: absolute;
+}
+
+#wrapper_resmal section div:hover {
+    display: fill;
+    background-color: #212924;
+    opacity: 30%;
+}
 
 
 
@@ -195,12 +227,12 @@ section:hover p {
 
 
 
-header3 img {
+#header3 img {
     width: 100px;
     padding: 10px;
 }
 
-header3 {
+#header3 {
     grid-area: h3;
     background-color: #212924;
     color: rgb(220, 236, 245);
@@ -208,6 +240,14 @@ header3 {
     position: relative;
     display: flex;
     align-items: center;
+}
+
+#header3_packning {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 0px;
+    width: 100%;
 }
 
 nav{
@@ -221,4 +261,22 @@ nav{
 #wrapper_packning nav p a {
     text-decoration: none;
     color:rgb(220, 236, 245)
+}
+
+#sec01 {
+    grid-area: s1;
+}
+
+#sec02 {
+    grid-area: s2;
+}
+
+#sec03 {
+    grid-area: s3;
+    object-fit: cover;
+    width: 100%px;
+}
+
+#sec04 {
+    grid-area:s4;
 }
