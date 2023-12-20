@@ -16,7 +16,7 @@
 #wrapper_resmal {
     display: grid;
     background-color: rgb(220, 236, 245);
-    grid-template-rows: 1fr 0.3fr 6fr;
+    grid-template-rows: 1fr 0.5fr 6fr;
     grid-template-areas: 
     'h2 h2'
     'nv nv'
@@ -260,7 +260,7 @@ nav{
 
 #wrapper_packning nav p a {
     text-decoration: none;
-    color:rgb(220, 236, 245)
+    color:#dcecf5
 }
 
 #sec01 {
